@@ -2,7 +2,7 @@
 
 const items = ['Pencil', 'Notebook', 'yo-yo', 'Gum'];
 
-/* 
+
 
   //Given this problem: 
   
@@ -22,12 +22,19 @@ const items = ['Pencil', 'Notebook', 'yo-yo', 'Gum'];
     console.log(first)
   });
 
-*/
 
 //Challange 1
 function getLength(arr, cb) {
 
 }
+
+function getLength(arr, cb) {
+  return cb(arr.length);
+}
+
+getLength(items, function(getLength) {
+  console.log(getLength);
+})
 
 
 
@@ -36,7 +43,13 @@ function last(arr, cb) {
   // last passes the last item of the array into the callback.
 }
 
+function last(arr, cb) {
+  return cb(arr[arr.length -1]);
+}
 
+last(items, function(last) {
+  console.log(last);
+});
 
 
 //Challange 3
