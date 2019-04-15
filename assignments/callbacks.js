@@ -2,8 +2,8 @@
 
 const items = ['Pencil', 'Notebook', 'yo-yo', 'Gum'];
 
-/* 
 
+/*
   //Given this problem: 
   
   function firstItem(arr, cb) {
@@ -21,30 +21,81 @@ const items = ['Pencil', 'Notebook', 'yo-yo', 'Gum'];
   firstItem(items, function(first) {
     console.log(first)
   });
-
 */
 
 
+//Challange 1
 function getLength(arr, cb) {
-  // getLength passes the length of the array into the callback.
+
+}
+
+function getLength(arr, cb) {
+  return cb(arr.length);
+}
+
+getLength(items, function(getLength) {
+  console.log(getLength);
+})
+
+
+
+//Challange 2
+function last(arr, cb) {
+
 }
 
 function last(arr, cb) {
-  // last passes the last item of the array into the callback.
+  return cb(arr[arr.length -1]);
 }
+
+last(items, function(last) {
+  console.log(last);
+});
+
+
+//Challange 3
 
 function sumNums(x, y, cb) {
-  // sumNums adds two numbers (x, y) and passes the result to the callback.
+  return cb(x,y);
 }
 
-function multiplyNums(x, y, cb) {
-  // multiplyNums multiplies two numbers and passes the result to the callback.
+function add(a, b) {
+  return a + b;
 }
+
+console.log(sumNums(3, 4, add));
+
+
+
+
+
+//Challange 4
+
+function multiplyNums(x, y, cb) {
+  return cb(x, y);
+}
+
+function mult(a, b) {
+  return a * b;
+}
+
+console.log(multiplyNums(3, 5, mult));
+
+
+
+//Challange 5
+
 
 function contains(item, list, cb) {
   // contains checks if an item is present inside of the given array/list.
   // Pass true to the callback if it is, otherwise pass false.
 }
+
+
+
+
+
+
 
 /* STRETCH PROBLEM */
 

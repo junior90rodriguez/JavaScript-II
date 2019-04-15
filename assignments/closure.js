@@ -1,6 +1,25 @@
 // ==== Challenge 1: Write your own closure ====
 // Write a simple closure of your own creation.  Keep it simple!
 
+function boxing() {
+  const canelo = 'World Champion';
+  console.log(`Canelo is ${canelo}!`);
+  
+  function ggg() {
+    const tripleG = 'Triple G'
+    console.log(`My name is ${tripleG} and I want a shot at the ${canelo}! `);
+    const message = "I want my shot";
+    
+    function wba() {
+      console.log(`${tripleG} we got your message: ${message}, and we hear you loud and clear!`);
+      
+    }
+    wba();
+  }
+  ggg();
+}
+
+boxing();
 
 /* STRETCH PROBLEMS, Do not attempt until you have completed all previous tasks for today's project files */
 
